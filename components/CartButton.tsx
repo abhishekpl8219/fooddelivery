@@ -1,6 +1,6 @@
 import { images } from "@/constants";
 import React from "react";
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 
 const CartButton = () => {
   const totalitems = 10;
@@ -17,5 +17,3 @@ const CartButton = () => {
 };
 
 export default CartButton;
-
-const styles = StyleSheet.create({});
