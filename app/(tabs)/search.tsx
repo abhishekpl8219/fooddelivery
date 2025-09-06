@@ -2,13 +2,15 @@ import React, { useEffect } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import CartButton from "@/components/CartButton";
+import Filter from "@/components/Filter";
+import MenuCard from "@/components/MenuCard";
+import SearchBar from "@/components/SearchBar";
 import { getCategories, getMenu } from "@/lib/appwrite";
 import useAppwrite from "@/lib/useAppwrite";
+import { MenuItem } from "@/type";
 import cn from "clsx";
 import { useLocalSearchParams } from "expo-router";
 import { FlatList, Text, View } from "react-native";
-import MenuCard from "@/components/MenuCard";
-import { MenuItem } from "@/type";
 
 const Search = () => {
   const { category, query } = useLocalSearchParams<{
@@ -38,8 +40,7 @@ const Search = () => {
                 !isFirstRightColItem ? "mt-10" : "mt-0"
               )}
             >
-             
-              <MenuCard  item={item as MenuItem} />
+              <MenuCard item={item as MenuItem} />
             </View>
           );
         }}
@@ -63,6 +64,8 @@ const Search = () => {
 
               <CartButton />
             </View>
+            <SearchBar />
+            <Filter  categories={categories!}/>
           </View>
         )}
         ListEmptyComponent={() => !loading && <Text>No results</Text>}
