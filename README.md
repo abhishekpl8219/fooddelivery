@@ -1,6 +1,5 @@
+![WhatsApp Image 2025-09-06 at 7 17 46 PM (2)](https://github.com/user-attachments/assets/bcb76951-1d0f-435c-90d0-d5f1eb09e63b)
 
-
-![WhatsApp Image 2025-09-06 at 7 17 46 PM](https://github.com/user-attachments/assets/c535078e-c2e5-4469-8e81-a8b5d7f75d8a)
 
 Introduction
 Built with React Native, TypeScript, and Tailwind CSS, this full-stack Food Delivery app features Google Authentication, dynamic search and filters, cart functionality, and smooth navigation. Powered by Appwrite for backend, database, and file storage, it delivers a responsive, scalable, and intuitive user experience with modern UI/UX best practices.
